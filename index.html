@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Signal 💜 Kenali Pola Cintamu</title>
-<meta name="description" content="Quiz 3 menit yang akan mengungkap pola cinta & kepribadian hubunganmu. 50,000+ orang sudah coba!">
-<meta property="og:title" content="Signal 💜 Kenali Pola Cintamu">
-<meta property="og:description" content="Quiz 3 menit yang akan mengungkap pola cinta & kepribadian hubunganmu">
+<title>Cocok 💜 Cari yang Beneran Cocok</title>
+<meta name="description" content="Quiz 3 menit. Temukan pola cintamu dan siapa yang benar-benar cocok untukmu. 50,000+ orang sudah coba!">
+<meta property="og:title" content="Cocok 💜 Cari yang Beneran Cocok">
+<meta property="og:description" content="Quiz 3 menit. Temukan pola cintamu dan siapa yang benar-benar cocok untukmu.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://cocok.app">
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
 tailwind.config = {
@@ -52,8 +53,8 @@ body { font-family: 'Inter', sans-serif; }
   </div>
   <div class="text-center max-w-md mx-auto slide-up">
     <div class="text-6xl mb-4 floating">💜</div>
-    <h1 class="text-4xl font-black mb-2 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent" id="heroTitle">Kenali Pola Cintamu</h1>
-    <p class="text-gray-400 mb-8 text-lg" id="heroSub">Quiz 3 menit yang akan mengungkap pola cinta & kepribadian hubunganmu</p>
+    <h1 class="text-4xl font-black mb-2 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent" id="heroTitle">Cari yang Beneran Cocok</h1>
+    <p class="text-gray-400 mb-8 text-lg" id="heroSub">Quiz 3 menit. Temukan pola cintamu dan siapa yang benar-benar cocok untukmu.</p>
     <button onclick="startQuiz()" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold text-lg px-8 py-4 rounded-2xl pulse-glow hover:scale-105 transition-transform" id="startBtn">
       Mulai Quiz →
     </button>
@@ -104,7 +105,7 @@ body { font-family: 'Inter', sans-serif; }
     <div id="resultCard" class="result-card-bg rounded-3xl p-8 text-center mb-6 slide-up relative overflow-hidden">
       <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 20% 80%, rgba(236,72,153,0.3), transparent 50%), radial-gradient(circle at 80% 20%, rgba(168,85,247,0.3), transparent 50%);"></div>
       <div class="relative z-10">
-        <p class="text-xs text-purple-300 uppercase tracking-widest mb-2">Signal 💜 Love Pattern</p>
+        <p class="text-xs text-purple-300 uppercase tracking-widest mb-2">Cocok 💜 Love Pattern</p>
         <div class="text-6xl mb-4" id="resultEmoji"></div>
         <h2 class="text-3xl font-black mb-3 bg-gradient-to-r from-purple-300 to-pink-300 bg-clip-text text-transparent" id="resultType"></h2>
         <p class="text-gray-300 leading-relaxed mb-6" id="resultDesc"></p>
@@ -118,7 +119,7 @@ body { font-family: 'Inter', sans-serif; }
             <p class="text-white" id="compatCaution"></p>
           </div>
         </div>
-        <p class="text-[10px] text-purple-400 mt-4">signal-quiz.vercel.app</p>
+        <p class="text-[10px] text-purple-400 mt-4">cocok.app</p>
       </div>
     </div>
 
@@ -199,12 +200,15 @@ body { font-family: 'Inter', sans-serif; }
       <p class="mt-2 text-xs" id="payNote">Setelah transfer, klik tombol unlock untuk konfirmasi via WhatsApp</p>
     </div>
 
-    <!-- Download Signal CTA -->
+    <!-- Cocok CTA -->
     <div class="bg-gradient-to-r from-purple-800 to-purple-900 rounded-2xl p-6 text-center mb-8">
       <p class="text-lg font-bold mb-2" id="ctaTitle">💜 Mau ketemu match-mu?</p>
-      <p class="text-gray-300 text-sm mb-4" id="ctaSub">Download Signal Dating — Dating app yang beneran ngerti kamu</p>
-      <a href="https://signal.dating" target="_blank" class="inline-block bg-white text-purple-900 font-bold px-6 py-3 rounded-xl hover:bg-gray-100 transition" id="ctaBtn">Download Signal →</a>
+      <p class="text-gray-300 text-sm mb-4" id="ctaSub">Cocok — Dating app yang beneran ngerti kamu</p>
+      <a href="https://t.me/cocokapp" target="_blank" class="inline-block bg-white text-purple-900 font-bold px-6 py-3 rounded-xl hover:bg-gray-100 transition" id="ctaBtn">Gabung Cocok →</a>
     </div>
+
+    <!-- Footer -->
+    <p class="text-center text-xs text-gray-600 mb-4">© 2025 Cocok. All rights reserved.</p>
   </div>
 </section>
 
@@ -235,8 +239,8 @@ const typeDescs = {
 };
 
 const i18n = {
-  heroTitle:     { id: 'Kenali Pola Cintamu', en: 'Discover Your Love Pattern' },
-  heroSub:       { id: 'Quiz 3 menit yang akan mengungkap pola cinta & kepribadian hubunganmu', en: '3-minute quiz that reveals your relationship pattern using AI' },
+  heroTitle:     { id: 'Cari yang Beneran Cocok', en: 'Find Your True Match' },
+  heroSub:       { id: 'Quiz 3 menit. Temukan pola cintamu dan siapa yang benar-benar cocok untukmu.', en: '3-minute quiz. Discover your love pattern and who truly fits you.' },
   startBtn:      { id: 'Mulai Quiz →', en: 'Start Quiz →' },
   socialProof:   { id: '🔥 50,000+ orang sudah coba', en: '🔥 50,000+ people have tried it' },
   langBtn:       { id: '🇬🇧 EN', en: '🇮🇩 ID' },
@@ -251,8 +255,8 @@ const i18n = {
   payTitle:      { id: '💳 Opsi Pembayaran', en: '💳 Payment Options' },
   payNote:       { id: 'Setelah transfer, klik tombol unlock untuk konfirmasi via WhatsApp', en: 'After transfer, click unlock to confirm via WhatsApp' },
   ctaTitle:      { id: '💜 Mau ketemu match-mu?', en: '💜 Want to meet your match?' },
-  ctaSub:        { id: 'Download Signal Dating — Dating app yang beneran ngerti kamu', en: 'Download Signal Dating — AI-powered dating app that truly gets you' },
-  ctaBtn:        { id: 'Download Signal →', en: 'Download Signal →' },
+  ctaSub:        { id: 'Cocok — Dating app yang beneran ngerti kamu', en: 'Cocok — Dating app that truly gets you' },
+  ctaBtn:        { id: 'Gabung Cocok →', en: 'Join Cocok →' },
   unlockBtn1:    { id: '🔓 Buka Laporan Lengkap', en: '🔓 Unlock Full Report' },
   unlockBtn2:    { id: '🔓 Buka Profil Match Idealmu', en: '🔓 Unlock Your Ideal Match Profile' },
 };
@@ -364,7 +368,6 @@ const questions = [
 function calcType() {
   const s = { deep: 0, passionate: 0, steady: 0, free: 0, growth: 0, romantic: 0, secure: 0, anxious: 0, avoidant: 0, open: 0, reserved: 0, adventure: 0, stability: 0, gifts: 0, touch: 0, words: 0, acts: 0, time: 0 };
   answers.forEach(a => { Object.entries(a.scores).forEach(([k,v]) => { s[k] = (s[k]||0) + v; }); });
-  // bonus mapping
   s.deep += s.secure + s.open;
   s.passionate += s.anxious + s.adventure;
   s.steady += s.stability + s.reserved;
@@ -426,18 +429,18 @@ function showResult() {
   const cautionT = types[t.caution];
   document.getElementById('compatMatch').textContent = matchT.emoji + ' ' + (matchT[lang] || matchT.en);
   document.getElementById('compatCaution').textContent = cautionT.emoji + ' ' + (cautionT[lang] || cautionT.en);
-  const shareUrl = `${location.origin}${location.pathname}?type=${resultType}&ref=${quizId}`;
+  const shareUrl = `https://cocok.app?type=${resultType}&ref=${quizId}`;
   document.getElementById('referralLink').textContent = shareUrl;
   show('result');
   window.scrollTo(0, 0);
 }
 
-function getShareUrl() { return `${location.origin}${location.pathname}?type=${resultType}&ref=${quizId}`; }
+function getShareUrl() { return `https://cocok.app?type=${resultType}&ref=${quizId}`; }
 function getShareText() {
   const t = types[resultType];
   return lang === 'id'
-    ? `${t.emoji} Tipe cintaku: ${t.id}! Coba quiz Signal dan temukan pola cintamu 💜`
-    : `${t.emoji} My love type: ${t.en}! Try Signal's quiz and discover your love pattern 💜`;
+    ? `${t.emoji} Aku tipe ${t.id} di Cocok! Coba quiz-nya: cocok.app`
+    : `${t.emoji} I'm ${t.en} on Cocok! Try the quiz: cocok.app`;
 }
 
 function shareWA() { window.open(`https://wa.me/?text=${encodeURIComponent(getShareText()+'\n'+getShareUrl())}`, '_blank'); }
@@ -455,9 +458,9 @@ function unlockReport(type) {
   const t = types[resultType];
   const name = t[lang] || t.en;
   if (type === 'full') {
-    window.open(`https://wa.me/6281311024455?text=${encodeURIComponent(`Halo Signal! Saya mau unlock Full AFP Report (Rp 29k). Quiz ID: ${quizId}. Tipe saya: ${name}`)}`, '_blank');
+    window.open(`https://wa.me/6281311024455?text=${encodeURIComponent(`Halo Cocok! Saya mau unlock Full Report (Rp 29k). Quiz ID: ${quizId}. Tipe saya: ${name}`)}`, '_blank');
   } else {
-    window.open(`https://wa.me/6281311024455?text=${encodeURIComponent(`Halo Signal! Saya mau unlock Ideal Match Report (Rp 49k). Quiz ID: ${quizId}. Tipe saya: ${name}`)}`, '_blank');
+    window.open(`https://wa.me/6281311024455?text=${encodeURIComponent(`Halo Cocok! Saya mau unlock Ideal Match Report (Rp 49k). Quiz ID: ${quizId}. Tipe saya: ${name}`)}`, '_blank');
   }
 }
 
