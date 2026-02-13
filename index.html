@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Signal 💜 Kenali Pola Cintamu</title>
-<meta name="description" content="Quiz 3 menit yang akan mengungkap pola hubunganmu berdasarkan AI. 50,000+ orang sudah coba!">
+<meta name="description" content="Quiz 3 menit yang akan mengungkap pola cinta & kepribadian hubunganmu. 50,000+ orang sudah coba!">
 <meta property="og:title" content="Signal 💜 Kenali Pola Cintamu">
-<meta property="og:description" content="Quiz 3 menit yang akan mengungkap pola hubunganmu berdasarkan AI">
+<meta property="og:description" content="Quiz 3 menit yang akan mengungkap pola cinta & kepribadian hubunganmu">
 <meta property="og:type" content="website">
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
@@ -53,7 +53,7 @@ body { font-family: 'Inter', sans-serif; }
   <div class="text-center max-w-md mx-auto slide-up">
     <div class="text-6xl mb-4 floating">💜</div>
     <h1 class="text-4xl font-black mb-2 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent" id="heroTitle">Kenali Pola Cintamu</h1>
-    <p class="text-gray-400 mb-8 text-lg" id="heroSub">Quiz 3 menit yang akan mengungkap pola hubunganmu berdasarkan AI</p>
+    <p class="text-gray-400 mb-8 text-lg" id="heroSub">Quiz 3 menit yang akan mengungkap pola cinta & kepribadian hubunganmu</p>
     <button onclick="startQuiz()" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold text-lg px-8 py-4 rounded-2xl pulse-glow hover:scale-105 transition-transform" id="startBtn">
       Mulai Quiz →
     </button>
@@ -183,7 +183,7 @@ body { font-family: 'Inter', sans-serif; }
     <!-- Download Signal CTA -->
     <div class="bg-gradient-to-r from-purple-800 to-purple-900 rounded-2xl p-6 text-center mb-8">
       <p class="text-lg font-bold mb-2" id="ctaTitle">💜 Mau ketemu match-mu?</p>
-      <p class="text-gray-300 text-sm mb-4" id="ctaSub">Download Signal Dating — AI-powered dating app yang beneran ngerti kamu</p>
+      <p class="text-gray-300 text-sm mb-4" id="ctaSub">Download Signal Dating — Dating app yang beneran ngerti kamu</p>
       <a href="https://signal.dating" target="_blank" class="inline-block bg-white text-purple-900 font-bold px-6 py-3 rounded-xl hover:bg-gray-100 transition" id="ctaBtn">Download Signal →</a>
     </div>
   </div>
@@ -217,7 +217,7 @@ const typeDescs = {
 
 const i18n = {
   heroTitle:     { id: 'Kenali Pola Cintamu', en: 'Discover Your Love Pattern' },
-  heroSub:       { id: 'Quiz 3 menit yang akan mengungkap pola hubunganmu berdasarkan AI', en: '3-minute quiz that reveals your relationship pattern using AI' },
+  heroSub:       { id: 'Quiz 3 menit yang akan mengungkap pola cinta & kepribadian hubunganmu', en: '3-minute quiz that reveals your relationship pattern using AI' },
   startBtn:      { id: 'Mulai Quiz →', en: 'Start Quiz →' },
   socialProof:   { id: '🔥 50,000+ orang sudah coba', en: '🔥 50,000+ people have tried it' },
   langBtn:       { id: '🇬🇧 EN', en: '🇮🇩 ID' },
@@ -232,7 +232,7 @@ const i18n = {
   payTitle:      { id: '💳 Opsi Pembayaran', en: '💳 Payment Options' },
   payNote:       { id: 'Setelah transfer, klik tombol unlock untuk konfirmasi via WhatsApp', en: 'After transfer, click unlock to confirm via WhatsApp' },
   ctaTitle:      { id: '💜 Mau ketemu match-mu?', en: '💜 Want to meet your match?' },
-  ctaSub:        { id: 'Download Signal Dating — AI-powered dating app yang beneran ngerti kamu', en: 'Download Signal Dating — AI-powered dating app that truly gets you' },
+  ctaSub:        { id: 'Download Signal Dating — Dating app yang beneran ngerti kamu', en: 'Download Signal Dating — AI-powered dating app that truly gets you' },
   ctaBtn:        { id: 'Download Signal →', en: 'Download Signal →' },
   unlockBtn1:    { id: '🔓 Unlock Full Report', en: '🔓 Unlock Full Report' },
   unlockBtn2:    { id: '🔓 Unlock Match Report', en: '🔓 Unlock Match Report' },
@@ -260,8 +260,8 @@ const questions = [
     ]
   },
   {
-    id: 'Urutkan yang paling penting:',
-    en: 'Rank what matters most:',
+    id: 'Mana yang PALING penting dalam hubungan?',
+    en: 'What matters MOST in a relationship?',
     options: [
       { id: '🤝 Kepercayaan', en: '🤝 Trust', scores: { secure: 2, deep: 2, stability: 1 } },
       { id: '⚡ Chemistry', en: '⚡ Chemistry', scores: { passionate: 2, adventure: 1 } },
