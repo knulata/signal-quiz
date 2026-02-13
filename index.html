@@ -141,35 +141,54 @@ body { font-family: 'Inter', sans-serif; }
     </div>
 
     <!-- Premium: Full Report -->
-    <div class="bg-gray-900 rounded-2xl p-6 mb-4 relative overflow-hidden">
-      <div class="flex items-center gap-2 mb-3">
+    <div class="bg-gray-900 rounded-2xl p-6 mb-4 relative overflow-hidden border border-purple-500/30">
+      <div class="flex items-center gap-2 mb-2">
         <span class="bg-purple-600 text-xs font-bold px-2 py-1 rounded-full">🔒 PREMIUM</span>
-        <h3 class="font-bold" id="premTitle1">Full AFP Report</h3>
       </div>
-      <p class="text-2xl font-black text-purple-400 mb-4">Rp 29.000</p>
+      <h3 class="text-xl font-bold mb-2" id="premTitle1">Laporan Lengkap Pola Cintamu</h3>
+      <p class="text-gray-400 text-sm mb-3" id="premDesc1">Hasil quiz kamu cuma permukaannya. Laporan lengkap ini mengungkap:</p>
+      <ul class="text-sm text-gray-300 space-y-2 mb-4">
+        <li>💔 <strong>Pola Attachment</strong> — Kenapa kamu selalu tertarik tipe yang sama? Apa yang membuatmu cemas atau menghindar?</li>
+        <li>🗣️ <strong>Gaya Komunikasi</strong> — Cara kamu berantem, minta maaf, dan mengekspresikan cinta</li>
+        <li>💕 <strong>Love Language Detail</strong> — Bukan cuma tipe, tapi cara spesifik kamu memberi & menerima cinta</li>
+        <li>🚩 <strong>Red & Green Flags</strong> — Apa yang harus kamu waspadai dan apa kelebihanmu dalam hubungan</li>
+        <li>💡 <strong>Tips Personal</strong> — 5 saran spesifik untuk hubunganmu berdasarkan polamu</li>
+      </ul>
       <div class="blur-content text-sm text-gray-300 space-y-2 mb-4">
-        <p><strong>Pola Attachment:</strong> Kamu memiliki gaya attachment yang cenderung secure dengan sedikit kecemasan. Ini berarti kamu mampu membentuk ikatan yang dalam namun kadang overthinking tentang perasaan pasangan...</p>
-        <p><strong>Gaya Komunikasi:</strong> Kamu adalah communicator yang ekspresif namun selektif. Kamu tidak sembarangan berbagi perasaan, tetapi saat sudah nyaman, kamu bisa sangat terbuka dan jujur...</p>
-        <p><strong>Love Language:</strong> Quality time dan words of affirmation adalah cara utamamu menunjukkan dan menerima cinta. Kamu menghargai kehadiran penuh dan percakapan yang bermakna...</p>
-        <p><strong>Red & Green Flags:</strong> Green flag utamamu adalah kemampuan empati dan kesediaan untuk grow bersama. Red flag yang perlu diwaspadai adalah kecenderungan untuk menghindari konflik...</p>
-        <p><strong>Ideal Partner Profile:</strong> Pasangan idealmu adalah seseorang yang sabar, komunikatif, dan memiliki emotional intelligence tinggi. Mereka perlu memberi ruang tapi tetap konsisten...</p>
-        <p><strong>Tips Hubungan:</strong> Belajar untuk lebih nyaman dengan ketidakpastian. Tidak semua hal perlu dianalisis — kadang, rasakan saja. Latih dirimu untuk mengekspresikan kebutuhan tanpa takut mengganggu...</p>
+        <p>Kamu memiliki gaya attachment yang cenderung secure dengan sedikit kecemasan. Ini berarti kamu mampu membentuk ikatan yang dalam namun kadang overthinking tentang perasaan pasangan. Pola ini biasanya terbentuk dari...</p>
+        <p>Cara kamu berkomunikasi dalam konflik cenderung menghindari dulu, baru memproses. Ini bukan kelemahan, tapi pasanganmu perlu tahu bahwa kamu butuh waktu, bukan menolak mereka...</p>
       </div>
-      <button onclick="unlockReport('full')" class="w-full bg-gradient-to-r from-purple-600 to-pink-600 font-bold py-3 rounded-xl hover:opacity-90 transition" id="unlockBtn1">🔓 Unlock Full Report</button>
+      <div class="flex items-center justify-between mb-3">
+        <p class="text-2xl font-black text-purple-400">Rp 29.000</p>
+        <p class="text-xs text-gray-500 line-through">Rp 79.000</p>
+      </div>
+      <button onclick="unlockReport('full')" class="w-full bg-gradient-to-r from-purple-600 to-pink-600 font-bold py-3 rounded-xl hover:opacity-90 transition" id="unlockBtn1">🔓 Buka Laporan Lengkap</button>
+      <p class="text-center text-xs text-gray-500 mt-2">4,823 orang sudah unlock minggu ini</p>
     </div>
 
     <!-- Premium: Ideal Match -->
-    <div class="bg-gray-900 rounded-2xl p-6 mb-4 relative overflow-hidden">
-      <div class="flex items-center gap-2 mb-3">
+    <div class="bg-gray-900 rounded-2xl p-6 mb-4 relative overflow-hidden border border-pink-500/30">
+      <div class="flex items-center gap-2 mb-2">
         <span class="bg-pink-600 text-xs font-bold px-2 py-1 rounded-full">🔒 PREMIUM</span>
-        <h3 class="font-bold" id="premTitle2">Ideal Match Report</h3>
+        <span class="bg-yellow-500 text-black text-xs font-bold px-2 py-1 rounded-full">⭐ TERLARIS</span>
       </div>
-      <p class="text-2xl font-black text-pink-400 mb-4">Rp 49.000</p>
+      <h3 class="text-xl font-bold mb-2" id="premTitle2">Profil Pasangan Idealmu</h3>
+      <p class="text-gray-400 text-sm mb-3" id="premDesc2">Pernah nanya "sebenernya aku cocoknya sama tipe yang gimana?" Ini jawabannya:</p>
+      <ul class="text-sm text-gray-300 space-y-2 mb-4">
+        <li>👤 <strong>Tipe Kepribadian Ideal</strong> — Karakter spesifik yang bakal bikin kamu jatuh cinta & bertahan</li>
+        <li>⚡ <strong>Chemistry Match</strong> — Tipe mana yang bikin kamu "klik" vs yang cuma sementara</li>
+        <li>⚠️ <strong>Tipe yang Harus Dihindari</strong> — Kenapa hubungan lamamu ga works, dan pola apa yang harus dihentikan</li>
+        <li>💬 <strong>Conversation Starter</strong> — 3 pertanyaan untuk mengetahui apakah seseorang cocok untukmu</li>
+      </ul>
       <div class="blur-content text-sm text-gray-300 space-y-2 mb-4">
-        <p>Berdasarkan analisis pola cintamu, pasangan idealmu memiliki karakteristik berikut: seseorang yang hangat namun independen, mampu memberikan ruang personal sambil tetap hadir secara emosional...</p>
-        <p>Mereka kemungkinan besar adalah tipe yang tenang namun penuh perhatian, suka deep conversation, dan memiliki ambisi personal yang kuat. Secara fisik, kamu tertarik pada orang yang memancarkan kehangatan...</p>
+        <p>Pasangan idealmu adalah seseorang yang hangat namun independen, mampu memberikan ruang personal sambil tetap hadir secara emosional. Mereka kemungkinan besar adalah tipe yang tenang namun penuh perhatian...</p>
       </div>
-      <button onclick="unlockReport('match')" class="w-full bg-gradient-to-r from-pink-600 to-purple-600 font-bold py-3 rounded-xl hover:opacity-90 transition" id="unlockBtn2">🔓 Unlock Match Report</button>
+      <div class="flex items-center justify-between mb-3">
+        <p class="text-2xl font-black text-pink-400">Rp 49.000</p>
+        <p class="text-xs text-gray-500 line-through">Rp 129.000</p>
+      </div>
+      <button onclick="unlockReport('match')" class="w-full bg-gradient-to-r from-pink-600 to-purple-600 font-bold py-3 rounded-xl hover:opacity-90 transition" id="unlockBtn2">🔓 Buka Profil Match Idealmu</button>
+      <p class="text-center text-xs text-gray-500 mt-2">Yang paling sering di-unlock! 🔥</p>
     </div>
 
     <!-- Payment Info -->
@@ -234,8 +253,8 @@ const i18n = {
   ctaTitle:      { id: '💜 Mau ketemu match-mu?', en: '💜 Want to meet your match?' },
   ctaSub:        { id: 'Download Signal Dating — Dating app yang beneran ngerti kamu', en: 'Download Signal Dating — AI-powered dating app that truly gets you' },
   ctaBtn:        { id: 'Download Signal →', en: 'Download Signal →' },
-  unlockBtn1:    { id: '🔓 Unlock Full Report', en: '🔓 Unlock Full Report' },
-  unlockBtn2:    { id: '🔓 Unlock Match Report', en: '🔓 Unlock Match Report' },
+  unlockBtn1:    { id: '🔓 Buka Laporan Lengkap', en: '🔓 Unlock Full Report' },
+  unlockBtn2:    { id: '🔓 Buka Profil Match Idealmu', en: '🔓 Unlock Your Ideal Match Profile' },
 };
 
 const questions = [
